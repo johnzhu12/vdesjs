@@ -1,47 +1,50 @@
 <template>
   <div class="item">
     <div class="module">
-        <img :src="Logos[componentName]" class="box" />
-        <p style="font-size: 14px">{{name}}</p>
+      <img :src="Logos[componentName]" class="box" />
+      <p style="font-size: 14px">{{ name }}</p>
     </div>
   </div>
 </template>
 <script>
-import basicsMixin from "@/common/js/h5/importBasics";
-import layoutMixin from "@/common/js/h5/importLayout";
-import formMixin from "@/common/js/h5/importForm";
-import feebackMixin from "@/common/js/h5/importFeeback";
-import showMixin from "@/common/js/h5/importShow";
-import navMixin from "@/common/js/h5/importNav";
-import businessMixin from "@/common/js/h5/importBusiness";
+import basicsMixin from '@/common/js/h5/importBasics'
+import layoutMixin from '@/common/js/h5/importLayout'
+import formMixin from '@/common/js/h5/importForm'
+import feebackMixin from '@/common/js/h5/importFeeback'
+import showMixin from '@/common/js/h5/importShow'
+import navMixin from '@/common/js/h5/importNav'
+import businessMixin from '@/common/js/h5/importBusiness'
 export default {
   mixins: [basicsMixin, layoutMixin, formMixin, feebackMixin, showMixin, navMixin, businessMixin],
   created: function () {
-    console.log(JSON.stringify(this.name));
+    console.log(JSON.stringify(this.name))
   },
   data() {
-    return {};
+    return {}
   },
   props: {
     componentName: {
       type: String,
-      default: "",
+      default: ''
     },
     name: {
       type: String,
-      default: "",
+      default: ''
     },
     type: {
       type: String,
-      default: "basics",
-    },
-  },
-};
+      default: 'basics'
+    }
+  }
+}
 </script>
 <style scoped>
 .box {
+  border: 1px solid red;
+  width: 50px;
   height: 30px;
   background-color: lightgray;
+  margin: 20px 0;
 }
 .item {
   width: 50%;

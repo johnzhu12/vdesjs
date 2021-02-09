@@ -23,87 +23,7 @@
 
 export const basicCompoents = [
   {
-    name: "按钮",
-    id: "唯一值",
-    componentName: "VanButton",
-    mStyle: {},
-    mClass: [],
-    propValues: [
-      {
-        label: "标题",
-        key: "title",
-        value: "按钮",
-        type: "text"
-      },
-      {
-        label: "按钮类型",
-        key: "type",
-        type: "select",
-        value: {
-          chooseValue: "",
-          data: [
-            {
-              value: "primary",
-              label: "主要按钮"
-            },
-            {
-              value: "info",
-              label: "信息按钮"
-            },
-            {
-              value: "default",
-              label: "默认按钮"
-            },
-            {
-              value: "warning",
-              label: "警告按钮"
-            },
-            {
-              value: "danger",
-              label: "危险按钮"
-            }
-          ]
-        }
-      },
-      {
-        label: "按钮颜色",
-        key: "color",
-        type: "color",
-        value: "#656262"
-      }
-    ]
-  },
-  {
-    name: "布局",
-    id: "唯一值",
-    componentName: "VanLayout",
-    mStyle: {},
-    mClass: [],
-    propValues: [
-      {
-        label: "列配置项",
-        key: "col",
-        value: "正真的值在cols中",
-        type: "col"
-      }
-    ],
-    cols: [
-      {
-        span: 8,
-        list: []
-      },
-      {
-        span: 8,
-        list: []
-      },
-      {
-        span: 8,
-        list: []
-      }
-    ]
-  },
-  {
-    name: "单元格",
+    name: "文字",
     id: "唯一值",
     componentName: "VanCell",
     mStyle: {},
@@ -120,33 +40,6 @@ export const basicCompoents = [
         key: "content",
         value: "内容",
         type: "text"
-      }
-    ]
-  },
-  {
-    name: "图标",
-    id: "唯一值",
-    componentName: "VanIcon",
-    mStyle: {},
-    mClass: [],
-    propValues: [
-      {
-        label: "图标列表",
-        key: "icon",
-        value: "chat-o",
-        type: "iconList"
-      },
-      {
-        label: "颜色",
-        key: "color",
-        value: "",
-        type: "color"
-      },
-      {
-        label: "大小",
-        key: "size",
-        value: "30",
-        type: "num"
       }
     ]
   },
@@ -181,6 +74,48 @@ export const basicCompoents = [
         },
         type: "numUnit"
       }
+    ]
+  },
+  {
+    name: "热区图",
+    id: "唯一值",
+    componentName: "HotZone",
+    mStyle: {},
+    mClass: [],
+    zonesInit: [],
+    propValues: [
+
+      {
+        label: "图片",
+        key: "image",
+        value: "",
+        type: "imageStore"
+      },
+      {
+        label: "图片的宽度",
+        key: "width",
+        value: {
+          num: 100,
+          unit: "%"
+        },
+        type: "numUnit"
+      },
+      {
+        label: "图片的高度",
+        key: "height",
+        value: {
+          num: 100,
+          unit: "px"
+        },
+        type: "numUnit"
+      },
+      {
+        label: "最大热点数",
+        key: "max",
+        value: "4",
+        type: "text"
+      }
+
     ]
   }
 ];

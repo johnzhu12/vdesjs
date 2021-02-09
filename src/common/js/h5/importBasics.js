@@ -1,15 +1,17 @@
 
-import VanButton from"@/components/h5/basics/VanButton.vue"
+import VanButton from "@/components/h5/basics/VanButton.vue"
 import VanButtonLogo from "@/assets/h5/basics/按钮.png"
 
-import VanCell from"@/components/h5/basics/VanCell.vue"
+import VanCell from "@/components/h5/basics/VanCell.vue"
 import VanCellLogo from "@/assets/h5/basics/单元格.png"
 
-import VanIcon from"@/components/h5/basics/VanIcon.vue"
+import VanIcon from "@/components/h5/basics/VanIcon.vue"
 import VanIconLogo from "@/assets/h5/basics/图标.png"
 
-import VanImage from"@/components/h5/basics/VanImage.vue"
+import VanImage from "@/components/h5/basics/VanImage.vue"
 import VanImageLogo from "@/assets/h5/basics/图片.png"
+
+import HotZone from "@/components/h5/basics/HotZone.vue"
 
 
 
@@ -19,7 +21,8 @@ let basics = {
         VanButton,
         VanCell,
         VanIcon,
-        VanImage
+        VanImage,
+        HotZone
     },
     data() {
         return {
@@ -32,8 +35,8 @@ let basics = {
         }
 
     }
-        
-   
+
+
 }
 
 export default basics
